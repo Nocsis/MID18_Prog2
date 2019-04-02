@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=TicketMaschine
+comment1.params=art
+comment1.target=void\ waehleTicket(java.lang.String)
+comment2.params=
+comment2.target=AutomatenAusgabe\ kaufeTicket()
+comment3.params=
+comment3.target=int\ verkaufteTickets()
+comment4.params=betrag
+comment4.target=float\ geldEinwerfen(float)
+numComments=5

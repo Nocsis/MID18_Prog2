@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=AutomatenAusgabe
+comment1.params=rueckgeld\ ticket
+comment1.target=AutomatenAusgabe(float,\ Ticket)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3
