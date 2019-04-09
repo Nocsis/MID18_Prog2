@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=GameLoop
+comment1.params=gc\ game
+comment1.target=GameLoop(javafx.scene.canvas.GraphicsContext,\ Pong)
+comment2.params=currentNanoTime
+comment2.target=void\ handle(long)
+numComments=3
