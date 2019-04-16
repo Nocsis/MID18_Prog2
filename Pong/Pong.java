@@ -41,7 +41,7 @@ public class Pong extends Application
         loop = new GameLoop(gc, this);
         loop.start();
         
-        scene.setOnMouseClicked(new EventHandler<MouseEvent>() {
+        scene.setOnMouseMoved(new EventHandler<MouseEvent>() {
                 public void handle(MouseEvent e) {
                     getPaddle1().setY((int)e.getY());
                 }
