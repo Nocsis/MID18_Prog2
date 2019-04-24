@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Ball
-comment1.params=x\ y\ size\ gc\ game
-comment1.target=Ball(int,\ int,\ int,\ javafx.scene.canvas.GraphicsContext,\ Pong)
+comment1.params=x\ y\ size\ gc\ game\ nummer
+comment1.target=Ball(int,\ int,\ int,\ javafx.scene.canvas.GraphicsContext,\ Pong,\ int)
 comment2.params=
 comment2.target=void\ update()
 comment3.params=

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MouseMoveHandler
+comment1.params=game
+comment1.target=MouseMoveHandler(Pong)
+comment2.params=e
+comment2.target=void\ handle(javafx.scene.input.MouseEvent)
+numComments=3

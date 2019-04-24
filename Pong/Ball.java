@@ -10,8 +10,9 @@ public class Ball
     private Pong game;
     
     private int size;
+    private int nummer;
 
-    public Ball(int x, int y, int size, GraphicsContext gc, Pong game)
+    public Ball(int x, int y, int size, GraphicsContext gc, Pong game, int nummer)
     {
         this.x = x;
         this.y = y;
@@ -20,6 +21,7 @@ public class Ball
         this.size = size;
         this.gc = gc;
         this.game = game;
+        this.nummer = nummer;
         
     }
     
@@ -42,10 +44,13 @@ public class Ball
             vx *= -1;
         }
         
-        gc.setFill(Color.RED);
+        gc.setFill(Color.WHITE);
         gc.setStroke(Color.BLACK);
         gc.fillOval(x, y, size, size);
         gc.strokeOval(x, y, size, size);
+        
+        gc.setFill(Color.BLACK);
+        gc.fillText(""+nummer, x+(size/2)-4, y+(size/2)+4);
     }
     
     public String collision() {
@@ -61,8 +66,6 @@ public class Ball
         Paddle paddle1 = game.getPaddle1();
         
         gc.fillText("P1.y= "+paddle1.getY(), 5, 30);
-        gc.fillText("B.x= "+x, 5, 40);
-        gc.fillText("B.y= "+y, 5, 50);
         
         if (y >= paddle1.getY() && y <= paddle1.getY()+Paddle.PADDLE_HEIGHT) {
         
