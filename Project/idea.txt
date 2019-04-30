@@ -1,0 +1,21 @@
+High Noon, High Spirits
+
+Bar (Setting: classic Wild West)
+Drinks mischen
+entweder Bestellung direkt als "Baileys, Gin, Eis und Zitrone" oder als "Ein [Fancy Name here], aber schnell!"
+Handbuch mit Drink-Anleitungen mit Zeitbeschränkung pro Level (Timer beim Aufrufen läuft kontinuierlich ab solange Handbuch offen)
+Aktionen (5 linke Hand, 4 rechte Hand + Tray Aktion als Umschalten auf die Extras):
+- verschiedene Spirituosen (mehr mit höheren Levels?, max 5 I guess)
+- Eis
+- Zitrone
+- Tray mit Gurke/Früchten/Strohhalmen/Schirmchen
+- was zu Knabbern (Requests aus dem Hintergrund at random für Bonuspunkte)
+- Geld nehmen (individuelle Timer bevor es geklaut wird)
+
+UI:
+Tresen (unteres Drittel) darüber Gäste im Hintergrund und der jetzige Customer am Tresen
+Umschalten auf Tray mit "Blick" nach unten, sodass Tresen 2/3 des Screens ausfüllt
+Namen und Tasten der Aktionen am unteren Bildschirmrand (schön responsive mit button press Animation :3)
+Handbuch klein in Ecke das größer wird und aufklappt wenn es aufgerufen wird
+Bestellung in Sprechblase, genauso wir Snack Requests im Hintergrund
+Tageszeit, Einnahmen
