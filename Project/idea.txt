@@ -1,4 +1,4 @@
-High Noon, High Spirits
+High Spirits
 
 Bar (Setting: classic Wild West)
 Drinks mischen
@@ -18,4 +18,4 @@ Umschalten auf Tray mit "Blick" nach unten, sodass Tresen 2/3 des Screens ausfül
 Namen und Tasten der Aktionen am unteren Bildschirmrand (schön responsive mit button press Animation :3)
 Handbuch klein in Ecke das größer wird und aufklappt wenn es aufgerufen wird
 Bestellung in Sprechblase, genauso wir Snack Requests im Hintergrund
-Tageszeit, Einnahmen
+Tageszeit, Einnahmen oben links
