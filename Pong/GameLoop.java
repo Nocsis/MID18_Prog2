@@ -28,7 +28,9 @@ public class GameLoop extends AnimationTimer
         
         gc.fillRect(Pong.SCREEN_WIDTH/2, 0, 1, Pong.SCREEN_HEIGHT);
         
-        game.getBall().update();
+        for(Ball ball : game.getBalls()) {
+            ball.update();
+        }
         game.getPaddle1().update();
         game.getPaddle2().update();
         

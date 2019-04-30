@@ -7,6 +7,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.event.EventHandler;
 import javafx.scene.input.MouseEvent;
+import java.util.*;
 
 public class Pong extends Application
 {
@@ -16,8 +17,9 @@ public class Pong extends Application
     private int score = 0;
     
     private GameLoop loop;
+    private GraphicsContext gc;
     
-    private Ball ball;
+    private List<Ball> ballList;
     private Paddle paddle1, paddle2;
 
     public static void main(String[] args) {
@@ -32,21 +34,22 @@ public class Pong extends Application
         Canvas canvas = new Canvas(Pong.SCREEN_WIDTH, Pong.SCREEN_HEIGHT);
         root.getChildren().add(canvas);
 
-        GraphicsContext gc = canvas.getGraphicsContext2D();
+        gc = canvas.getGraphicsContext2D();
         
-        ball = new Ball(0, 0, 20, gc, this);
+        ballList = new ArrayList<Ball>();
+        Ball ball = new Ball(0, 0, 20, gc, this, 1);
+        ballList.add(ball);
+        
         paddle1 = new Paddle(25, gc, this);
         paddle2 = new Paddle(Pong.SCREEN_WIDTH-(25+Paddle.PADDLE_WIDTH), gc, this);
 
         loop = new GameLoop(gc, this);
         loop.start();
         
-        scene.setOnMouseMoved(new EventHandler<MouseEvent>() {
-                public void handle(MouseEvent e) {
-                    getPaddle1().setY((int)e.getY());
-                }
-            });
+        scene.setOnMouseMoved(new MouseMoveHandler(this));
 
+        scene.setOnMouseClicked(new MouseClickHandler(this));    
+        
         theStage.setTitle("Amazing Pong");
         theStage.show();
     }
@@ -67,6 +70,12 @@ public class Pong extends Application
         return score;
     }
     
+    public Ball addBall(int x, int y, int nummer) {
+        Ball newBall = new Ball(x, y, 20, gc, this, nummer);
+        ballList.add(newBall);
+        return newBall;
+    }
+    
     public Paddle getPaddle1() {
         return paddle1;
     }
@@ -75,7 +84,7 @@ public class Pong extends Application
         return paddle2;
     }
     
-    public Ball getBall() {
-        return ball;
+    public List<Ball> getBalls() {
+        return ballList;
     }
 }
